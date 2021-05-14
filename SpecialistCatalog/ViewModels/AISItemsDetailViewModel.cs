@@ -7,7 +7,7 @@ using Xamarin.Forms;
 namespace SpecialistCatalog.ViewModels
 {
     [QueryProperty(nameof(ItemId), nameof(ItemId))]
-    public class ItemDetailViewModel : BaseViewModel
+    class AISItemsDetailViewModel : BaseViewModel
     {
         private string itemId;
         private string text;
@@ -54,7 +54,7 @@ namespace SpecialistCatalog.ViewModels
                 Text = item.Text;
                 Description = item.Description;
                 Link = item.Link;
-                
+
             }
             catch (Exception)
             {

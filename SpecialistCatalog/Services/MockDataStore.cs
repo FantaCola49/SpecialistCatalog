@@ -32,8 +32,10 @@ namespace SpecialistCatalog.Services
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Дополнительные материалы №2", Description="Сетевой анализ и календарное планирование" , Link = @"https://drive.google.com/file/d/1jJ8Lwh7K0-jwOe73GP_ul4s4AFjZFNqt/view?usp=sharing"},
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Дополнительные материалы №3", Description="PMI - Руководство к своду знаний об управлении проектом" , Link = @"https://drive.google.com/file/d/1QiyD0YLduwqsNZxMAoSZaNqQZj3w6c1_/view?usp=sharing"},
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Вопросы к зачёту/экзамену", Description="Перечень вопросов к зачёту/экзамену по дисциплине 'Управление Проектами'" , Link = @"https://drive.google.com/file/d/1Odo03wSrSr3icscsjMhcPH7dWTYXjSdu/view?usp=sharing"},
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Интелектуальная карта", Description="Пример интелектуальной карты для облегчения процесса запоминания" , Link = @"https://coggle.it/diagram/YA6CR6dEAQDqoVmq/t/управление-проектами"},
-                
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Интелектуальная карта", Description="Пример интелектуальной карты для облегчения процесса запоминания" , Link = @"https://coggle.it/diagram/YA6CR6dEAQDqoVmq/t/управление-проектами"}, // id = 18
+
+                new Item {Id = Guid.NewGuid().ToString(), Is_AISnaGT = true, Text = "ЭТО ПЕРВЫЙ ИТЕМ 2 списка", Description = "ЭТО ПЕРВЫЙ ИТЕМ ДЛЯ АИСнаЖТ ИЗ 2 СПИСКА!!!"}, //id=19
+                new Item {Id = Guid.NewGuid().ToString(), Is_AISnaGT = true, Text = "ЭТО ВТОРОЙ ИТЕМ 2 списка", Description = "ЭТА ГОВНЯШКА РАБОТАЕТ НАХУЙ!!!"}
             };
         }
 

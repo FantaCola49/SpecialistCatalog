@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SpecialistCatalog.Views.AISnaGT_itemsDetailPage"
+             xmlns:vm="clr-namespace:SpecialistCatalog.ViewModels"
+             Title="{Binding Title}">
+
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15">
+            <Label Text="Text:" FontSize="Medium" />
+            <Label x:Name="ItemName" Text="{Binding Text}" FontSize="Small"/>
+            <Label Text="Description:" FontSize="Medium" />
+            <Label Text="{Binding Description}" FontSize="Small"/>
+            <Label x:Name="ItemLink" IsVisible="False" IsEnabled="False" FontSize="Medium" Text="{Binding Link}"/>
+            <WebView Source="{Binding Link}" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
+            <Button Text="Открыть в браузере" Clicked="OpenBut_Clicked" Padding="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

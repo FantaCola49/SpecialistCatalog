@@ -84,9 +84,9 @@
     <FlyoutItem Title="Управление Проектами" Icon="icon_feed.png">
         <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ItemsPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Лабораторные работы по УП">
+    <!--<FlyoutItem Title="Лабораторные работы по УП">
         <ShellContent Route="LabsUP" ContentTemplate="{DataTemplate local:LabsUP}"/>
-    </FlyoutItem>
+    </FlyoutItem>-->
     <FlyoutItem Title="АИСнаЖТ" Icon="">
         <ShellContent Route="AISnaGT_items" ContentTemplate="{DataTemplate local:AISnaGT_items}"/>
     </FlyoutItem>

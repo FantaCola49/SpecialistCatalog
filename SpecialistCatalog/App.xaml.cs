@@ -13,7 +13,10 @@ namespace SpecialistCatalog
         {
             InitializeComponent();
 
+            //Здесь регистрируем классы-Services, в которых хранятся данные и списки о итемах. Items появляются в ItemsDetailPage и т.д.
             DependencyService.Register<MockDataStore>();
+            //DependencyService.Register<AISDataStore>();
+            //Походу, может быть только одно хранилище данных, бля(
             MainPage = new AppShell();
         }
 

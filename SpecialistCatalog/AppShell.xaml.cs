@@ -12,6 +12,7 @@ namespace SpecialistCatalog
         {
             InitializeComponent();
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
+            Routing.RegisterRoute(nameof(AISnaGT_itemsDetailPage), typeof(AISnaGT_itemsDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
         }
 

@@ -8,7 +8,8 @@ using Xamarin.Forms;
 
 namespace SpecialistCatalog.ViewModels
 {
-    public class ItemsViewModel : BaseViewModel
+   
+    public class AISItemsViewModel : BaseViewModel
     {
         private Item _selectedItem;
 
@@ -17,9 +18,9 @@ namespace SpecialistCatalog.ViewModels
         public Command AddItemCommand { get; }
         public Command<Item> ItemTapped { get; }
 
-        public ItemsViewModel()
+        public AISItemsViewModel()
         {
-            Title = "Управление проектами"; //раньше был Browse
+            Title = "АИС на железнодорожном транспорте"; //Title set for page
             Items = new ObservableCollection<Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 
@@ -27,7 +28,6 @@ namespace SpecialistCatalog.ViewModels
 
             AddItemCommand = new Command(OnAddItem);
         }
-
         async Task ExecuteLoadItemsCommand()
         {
             IsBusy = true;
@@ -38,7 +38,7 @@ namespace SpecialistCatalog.ViewModels
                 var items = await DataStore.GetItemsAsync(true);
                 foreach (var item in items) ///ВОТ ПРИКРЕПЛЕНИЕ СПИСКА ИТЕМОВ! Тут надо внедрять цикл for
                 {
-                    if(!item.Is_AISnaGT)
+                    if(item.Is_AISnaGT) //Data validation from MockDataStore
                         Items.Add(item);
                 }
             }
@@ -78,8 +78,8 @@ namespace SpecialistCatalog.ViewModels
             if (item == null)
                 return;
 
-            // This will push the ItemDetailPage onto the navigation stack
-            await Shell.Current.GoToAsync($"{nameof(ItemDetailPage)}?{nameof(ItemDetailViewModel.ItemId)}={item.Id}");
+            // This will push the AISItemDetailPage onto the navigation stack
+            await Shell.Current.GoToAsync($"{nameof(AISnaGT_itemsDetailPage)}?{nameof(ItemDetailViewModel.ItemId)}={item.Id}");
         }
     }
 }
