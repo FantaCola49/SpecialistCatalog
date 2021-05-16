@@ -15,7 +15,6 @@ namespace SpecialistCatalog.Views
         public AISnaGT_itemsDetailPage()
         {
             InitializeComponent();
-            //BindingContext = new AISItemsDetailViewModel();
             BindingContext = new AISItemsDetailViewModel();
         }
         private void OpenBut_Clicked(object sender, System.EventArgs e)

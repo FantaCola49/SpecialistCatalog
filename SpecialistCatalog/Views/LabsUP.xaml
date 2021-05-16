@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SpecialistCatalog.Views.LabsUP"
+             xmlns:local="clr-namespace:SpecialistCatalog.ViewModels"  
+             xmlns:model="clr-namespace:SpecialistCatalog.Models"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+
+        <StackLayout>
+            <StackLayout Padding="10">
+                <Label Text="Лабараторная работа №1" 
+                            LineBreakMode="NoWrap" 
+                            Style="{DynamicResource ListItemTextStyle}" 
+                            FontSize="16" />
+                <Label Text="Разработка структуры ИТП. Устав проекта" 
+                            LineBreakMode="CharacterWrap"
+                            Style="{DynamicResource ListItemDetailTextStyle}"
+                            FontSize="13" />
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Tapped="OnTapGestureRecognizerTappedL1"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout Padding="10">
+                <Label Text="Лабараторная работа №2" 
+                            LineBreakMode="NoWrap" 
+                            Style="{DynamicResource ListItemTextStyle}" 
+                            FontSize="16" />
+                <Label Text="Разработка ТЭО" 
+                            LineBreakMode="CharacterWrap"
+                            Style="{DynamicResource ListItemDetailTextStyle}"
+                            FontSize="13" />
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Tapped="OnTapGestureRecognizerTappedL2"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+            
+            <StackLayout Padding="10">
+                <Label Text="Лабараторная работа №3" 
+                            LineBreakMode="NoWrap" 
+                            Style="{DynamicResource ListItemTextStyle}" 
+                            FontSize="16" />
+                <Label Text="Определение операций и формирования сметы" 
+                            LineBreakMode="CharacterWrap"
+                            Style="{DynamicResource ListItemDetailTextStyle}"
+                            FontSize="13" />
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Tapped="OnTapGestureRecognizerTappedL3"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout Padding="10">
+                <Label Text="Лабараторная работа №4" 
+                            LineBreakMode="NoWrap" 
+                            Style="{DynamicResource ListItemTextStyle}" 
+                            FontSize="16" />
+                <Label Text="Разработка расписания проекта" 
+                            LineBreakMode="CharacterWrap"
+                            Style="{DynamicResource ListItemDetailTextStyle}"
+                            FontSize="13" />
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Tapped="OnTapGestureRecognizerTappedL4"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout Padding="10">
+                <Label Text="Лабараторная работа №5" 
+                            LineBreakMode="NoWrap" 
+                            Style="{DynamicResource ListItemTextStyle}" 
+                            FontSize="16" />
+                <Label Text="Планирование качества проекта" 
+                            LineBreakMode="CharacterWrap"
+                            Style="{DynamicResource ListItemDetailTextStyle}"
+                            FontSize="13" />
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Tapped="OnTapGestureRecognizerTappedL5"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout Padding="10">
+                <Label Text="Лабараторные работы MS Project" 
+                            LineBreakMode="NoWrap" 
+                            Style="{DynamicResource ListItemTextStyle}" 
+                            FontSize="16" />
+                <Label Text="Разработка ТЭО" 
+                            LineBreakMode="CharacterWrap"
+                            Style="{DynamicResource ListItemDetailTextStyle}"
+                            FontSize="13" />
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Tapped="OnTapGestureRecognizerTappedL6"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

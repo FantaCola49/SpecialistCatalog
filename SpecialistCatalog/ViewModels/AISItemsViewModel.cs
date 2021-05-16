@@ -36,7 +36,7 @@ namespace SpecialistCatalog.ViewModels
             {
                 Items.Clear();
                 var items = await DataStore.GetItemsAsync(true);
-                foreach (var item in items) ///ВОТ ПРИКРЕПЛЕНИЕ СПИСКА ИТЕМОВ! Тут надо внедрять цикл for
+                foreach (var item in items)
                 {
                     if(item.Is_AISnaGT) //Data validation from MockDataStore
                         Items.Add(item);

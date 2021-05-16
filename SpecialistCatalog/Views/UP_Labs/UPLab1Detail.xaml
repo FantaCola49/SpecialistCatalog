@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SpecialistCatalog.Views.UP_Labs.UPLab1Detail"
+             Title="Разработка структуры ИТП. Устав проекта">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Padding="10">
+                <Label Text="Организационная структура ИТ-проекта" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="Открыть в браузере" Clicked="Button_Clicked_1"/>
+            </StackLayout>
+
+            <StackLayout Padding="10">
+                <Label Text="Инициация проекта" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="Открыть в браузере" Clicked="Button_Clicked_2"/>
+            </StackLayout>
+
+            <StackLayout Padding="10">
+                <Label Text="Устав проекта" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="Открыть в браузере" Clicked="Button_Clicked_3"/>
+            </StackLayout>
+
+            <StackLayout Padding="10">
+                <Label Text="Пример вопросов к кейсу" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="Открыть в браузере" Clicked="Button_Clicked"/>
+            </StackLayout>
+
+            <StackLayout Padding="10">
+                <Label Text="Пример структуры ИТ-проекта" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="Открыть в браузере" Clicked="Button_Clicked_4"/>
+            </StackLayout>
+
+            <StackLayout Padding="10">
+                <Label Text="Пример устава проекта" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="Открыть в браузере" Clicked="Button_Clicked_5"/>
+            </StackLayout>
+
+            <StackLayout Padding="10">
+                <Label Text="Пример устава проекта 2" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="Открыть в браузере" Clicked="Button_Clicked_6"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

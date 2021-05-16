@@ -14,6 +14,7 @@ namespace SpecialistCatalog.Services
         {
             items = new List<Item>()
             {
+                //Лекции по УП, материалы
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Лекция УП №1", Description="Управление проектом. История. Определения. Типы.", Link = @"https://drive.google.com/file/d/1Map-wtpPi8-R9qel3fYzNoot7BTRS8He/view?usp=sharing" },
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Лекция УП №2", Description="Жизненный цикл ИТ проекта. Организационная структура", Link=@"https://drive.google.com/file/d/1Uv3zUFopfRlmwpx3zj7hka1q-9EyeKRb/view?usp=sharing"},
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Лекция УП №3", Description="План управления проектом. \nОрганизационная структура проекта\nПостроение ИСР", Link = @"https://drive.google.com/file/d/1PAkn6nY_3aKOpaTMT9Gc-RpeGyVlufr9/view?usp=sharing"},
@@ -32,10 +33,12 @@ namespace SpecialistCatalog.Services
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Дополнительные материалы №2", Description="Сетевой анализ и календарное планирование" , Link = @"https://drive.google.com/file/d/1jJ8Lwh7K0-jwOe73GP_ul4s4AFjZFNqt/view?usp=sharing"},
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Дополнительные материалы №3", Description="PMI - Руководство к своду знаний об управлении проектом" , Link = @"https://drive.google.com/file/d/1QiyD0YLduwqsNZxMAoSZaNqQZj3w6c1_/view?usp=sharing"},
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Вопросы к зачёту/экзамену", Description="Перечень вопросов к зачёту/экзамену по дисциплине 'Управление Проектами'" , Link = @"https://drive.google.com/file/d/1Odo03wSrSr3icscsjMhcPH7dWTYXjSdu/view?usp=sharing"},
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Интелектуальная карта", Description="Пример интелектуальной карты для облегчения процесса запоминания" , Link = @"https://coggle.it/diagram/YA6CR6dEAQDqoVmq/t/управление-проектами"}, // id = 18
-
-                new Item {Id = Guid.NewGuid().ToString(), Is_AISnaGT = true, Text = "ЭТО ПЕРВЫЙ ИТЕМ 2 списка", Description = "ЭТО ПЕРВЫЙ ИТЕМ ДЛЯ АИСнаЖТ ИЗ 2 СПИСКА!!!"}, //id=19
-                new Item {Id = Guid.NewGuid().ToString(), Is_AISnaGT = true, Text = "ЭТО ВТОРОЙ ИТЕМ 2 списка", Description = "ЭТА ГОВНЯШКА РАБОТАЕТ НАХУЙ!!!"}
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Интелектуальная карта", Description="Пример интелектуальной карты для облегчения процесса запоминания" , Link = @"https://coggle.it/diagram/YA6CR6dEAQDqoVmq/t/управление-проектами"},
+                //АИС на ЖД, лекции
+                new Item {Id = Guid.NewGuid().ToString(), Is_AISnaGT = true, Text = "АИС ЭДВ", Description = "Автоматизированная информационная система организации перевозок грузов по безбумажной технологии на основе электронной накладной ", Link = @"https://drive.google.com/file/d/1Hj4uwL7P9oY3D0M8zt6trOk2olIbwpPI/view?usp=sharing"},
+                new Item {Id = Guid.NewGuid().ToString(), Is_AISnaGT = true, Text = "АКС ФТО", Description = "Автоматизированная комплексная система фирменного транспортного обслуживания", Link = @"https://drive.google.com/file/d/104Qs9s29BR6gdL1uLOlQ0DHKA5WShe5Z/view?usp=sharing"},
+                new Item {Id = Guid.NewGuid().ToString(), Is_AISnaGT = true, Text = "АСУСС", Description = "Поступление и обработка оперативных сообщений", Link = @"https://drive.google.com/file/d/1tiifnukkDywYCT2VTEggwmCieaONK_9X/view?usp=sharing"},
+                new Item {Id = Guid.NewGuid().ToString(), Is_AISnaGT = true, Text = "БКО Экспресс", Description = "Принципы работы", Link = @"https://drive.google.com/file/d/12iYhBiqLMlEs1SbGbz_OlN_9YjFIZRKs/view?usp=sharing"},
             };
         }
 
