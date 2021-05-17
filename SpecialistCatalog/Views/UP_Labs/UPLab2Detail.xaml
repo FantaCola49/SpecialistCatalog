@@ -1,12 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SpecialistCatalog.Views.UP_Labs.UPLab2Detail">
+             x:Class="SpecialistCatalog.Views.UP_Labs.UPLab2Detail"
+             Title="Разработка ТЭО">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout Padding="10">
+                <Label Text="Пример №1. ТЭО Web-сайта" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="Открыть в браузере" Clicked="Button_Clicked"/>
+            </StackLayout>
+
+            <StackLayout Padding="10">
+                <Label Text="Пример №2. ТЭО для АРМ" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="Открыть в браузере" Clicked="Button_Clicked_1"/>
+            </StackLayout>
+
+            <StackLayout Padding="10">
+                <Label Text="Пример №3. Автоматизированное рабочее место" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="Открыть в браузере" Clicked="Button_Clicked_2"/>
+            </StackLayout>
+
+            <StackLayout Padding="10">
+                <Label Text="Формулы и расчёты для примера №3" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="Открыть в браузере" Clicked="Button_Clicked_3"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
