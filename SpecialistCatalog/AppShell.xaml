@@ -4,13 +4,6 @@
        xmlns:local="clr-namespace:SpecialistCatalog.Views"
        Title="SpecialistCatalog"
        x:Class="SpecialistCatalog.AppShell">
-
-    <!--
-        The overall app visual hierarchy is defined here, along with navigation.
-    
-        https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/
-    -->
-
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">
@@ -73,22 +66,14 @@
         </ResourceDictionary>
     </Shell.Resources>
 
-    <!-- 
-        When the Flyout is visible this defines the content to display in the flyout.
-        FlyoutDisplayOptions="AsMultipleItems" will create a separate flyout item for each child element    
-        https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
-    -->
     <FlyoutItem Title="About" Icon="icon_about.png">
         <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
     </FlyoutItem>
     <FlyoutItem Title="Управление Проектами" Icon="icon_feed.png">
-        <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ItemsPage}" />
-    </FlyoutItem>
-    <FlyoutItem Title="Лабораторные работы по УП">
-        <ShellContent Route="LabsUP" ContentTemplate="{DataTemplate local:LabsUP}"/>
+        <ShellContent Route="UPMainPage" ContentTemplate="{DataTemplate local:UPMainPage}"/>
     </FlyoutItem>
     <FlyoutItem Title="АИСнаЖТ" Icon="">
-        <ShellContent Route="AISnaGT_items" ContentTemplate="{DataTemplate local:AISnaGT_items}"/>
+        <ShellContent Route="AISnaGT_MainPage" ContentTemplate="{DataTemplate local:AISnaGT_MainPage}"/>
     </FlyoutItem>
 
     <FlyoutItem Title="Cистемы искусственного интелекта" Icon="">
@@ -98,10 +83,7 @@
     <FlyoutItem Title="ИТПРИС" Icon="">
         
     </FlyoutItem>
-
-    
-    
-    
+   
     
     <MenuItem Text="Logout" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
     </MenuItem>

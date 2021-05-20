@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SpecialistCatalog.Views.UP_Labs.Lab6MSProject._6_8DetailPage"
+             Title="Лекция 8">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Padding="10">
+                <Label Text="Отчёт о практической работе 8" FontSize="Medium" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                <WebView x:Name="WebViewContainer" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                <Button Text="Открыть в браузере" HorizontalOptions="EndAndExpand" Clicked="Button_Clicked"/>
+            </StackLayout>
+
+            <StackLayout Padding="10">
+                <Label Text="Lesson_08_01" FontSize="16" LineBreakMode="NoWrap"/>
+                <Label Text="Открыть в браузере" FontSize="13"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Tapped="Tapped_Lesson08_01"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout Padding="10">
+                <Label Text="Lesson_08_02" FontSize="16" LineBreakMode="NoWrap"/>
+                <Label Text="Открыть в браузере" FontSize="13"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Tapped="Tapped_Lesson08_02"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout Padding="10">
+                <Label Text="Lesson_08_03" FontSize="16" LineBreakMode="NoWrap"/>
+                <Label Text="Открыть в браузере" FontSize="13"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Tapped="Tapped_Lesson08_03"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout Padding="10">
+                <Label Text="Lesson_08_04" FontSize="16" LineBreakMode="NoWrap"/>
+                <Label Text="Открыть в браузере" FontSize="13"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Tapped="Tapped_Lesson08_04"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+            <StackLayout Padding="10">
+                <Label Text="Lesson_08_05" FontSize="16" LineBreakMode="NoWrap"/>
+                <Label Text="Открыть в браузере" FontSize="13"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Tapped="Tapped_Lesson08_05"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

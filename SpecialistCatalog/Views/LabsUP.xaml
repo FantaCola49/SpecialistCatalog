@@ -93,7 +93,7 @@
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="16" />
-                <Label Text="Разработка ТЭО" 
+                <Label Text="С отчётами и выгрузками проектов MS Project" 
                             LineBreakMode="CharacterWrap"
                             Style="{DynamicResource ListItemDetailTextStyle}"
                             FontSize="13" />

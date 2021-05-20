@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SpecialistCatalog.Views.UP_Labs.Lab6MSProject._6_5DetailPage"
+             Title="Лекция 5">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Padding="10">
+                <Label Text="Отчёт о практической работе 5" FontSize="Medium" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                <WebView x:Name="WebViewContainer" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                <Button Text="Открыть в браузере" HorizontalOptions="EndAndExpand" Clicked="Button_Clicked"/>
+            </StackLayout>
+
+            <StackLayout Padding="10">
+                <Label Text="Lesson_05_01" FontSize="16" LineBreakMode="NoWrap"/>
+                <Label Text="Открыть в браузере" FontSize="13"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Tapped="Tapped_Lesson05_01"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout Padding="10">
+                <Label Text="Lesson_05_02" FontSize="16" LineBreakMode="NoWrap"/>
+                <Label Text="Открыть в браузере" FontSize="13"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Tapped="Tapped_Lesson05_02"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout Padding="10">
+                <Label Text="Lesson_05_03" FontSize="16" LineBreakMode="NoWrap"/>
+                <Label Text="Открыть в браузере" FontSize="13"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Tapped="Tapped_Lesson05_03"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
