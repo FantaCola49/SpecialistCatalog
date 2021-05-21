@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SpecialistCatalog.Views.AISnaGT_Labs.AIS_Labs_Main"
+             Title="Лабораторные работы по АИС на ЖТ">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Padding="10">
+                <Label Text="Лабараторная работа №1" 
+                            LineBreakMode="NoWrap" 
+                            Style="{DynamicResource ListItemTextStyle}" 
+                            FontSize="16" />
+                <Label Text="Определение величины информационных потоков для АСУ грузовой железнодорожной станции" 
+                            LineBreakMode="CharacterWrap"
+                            Style="{DynamicResource ListItemDetailTextStyle}"
+                            FontSize="13" />
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Tapped="Tapped_ToLab1"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+            <StackLayout Padding="10">
+                <Label Text="Лабараторная работа №2" 
+                            LineBreakMode="NoWrap" 
+                            Style="{DynamicResource ListItemTextStyle}" 
+                            FontSize="16" />
+                <Label Text="Расчёт технических норм эксплуатационной работы инфраструктуры на ЭВМ" 
+                            LineBreakMode="CharacterWrap"
+                            Style="{DynamicResource ListItemDetailTextStyle}"
+                            FontSize="13" />
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Tapped="Tapped_ToLab2"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+            <StackLayout Padding="10">
+                <Label Text="Лабараторная работа №3" 
+                            LineBreakMode="NoWrap" 
+                            Style="{DynamicResource ListItemTextStyle}" 
+                            FontSize="16" />
+                <Label Text="Анализ структуры проездного документа АСУ 'Экспресс 3'" 
+                            LineBreakMode="CharacterWrap"
+                            Style="{DynamicResource ListItemDetailTextStyle}"
+                            FontSize="13" />
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Tapped="Tapped_ToLab3"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

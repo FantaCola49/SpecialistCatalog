@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SpecialistCatalog.Views.AISnaGT_Labs.AISLab3Detail"
+             Title="Лабораторная работа 3">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Padding="10">
+                <Label Text="Задание на лабораторную работу 3" FontSize="Medium" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                <WebView x:Name="WebViewContainer" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                <Button Text="Открыть в браузере" HorizontalOptions="EndAndExpand" Clicked="Button_Clicked"/>
+            </StackLayout>
+            <StackLayout Padding="10">
+                <Label Text="Пример выполненной работы №3" FontSize="16" LineBreakMode="NoWrap"/>
+                <Label Text="Скачать на телефон" FontSize="13"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Tapped="Tapped_Report"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+            <StackLayout Padding="10">
+                <Label Text="1 страница конспекта в тетрадь" FontSize="16" LineBreakMode="NoWrap"/>
+                <Label Text="Скачать на телефон" FontSize="13"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Tapped="Tapped_Pg1"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+            <StackLayout Padding="10">
+                <Label Text="2 страница конспекта в тетрадь" FontSize="16" LineBreakMode="NoWrap"/>
+                <Label Text="Скачать на телефон" FontSize="13"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Tapped="Tapped_Pg2"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

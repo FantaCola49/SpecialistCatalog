@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using SpecialistCatalog.Views.AISnaGT_Labs;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -18,11 +18,11 @@ namespace SpecialistCatalog.Views
         }
         private void TapGestureRecognizer_ToLabs(object sender, EventArgs e)
         {
-            //await Navigation.PushAsync(new );
+            Navigation.PushAsync(new AIS_Labs_Main());
         }
-        private async void TapGestureRecognizer_ToMaterials(object sender, EventArgs e)
+        private void TapGestureRecognizer_ToMaterials(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new AISnaGT_items());
+            Navigation.PushAsync(new AISnaGT_items());
         }
     }
 }
