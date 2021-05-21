@@ -81,7 +81,7 @@
     </FlyoutItem>
 
     <FlyoutItem Title="ИТПРИС" Icon="">
-        
+        <ShellContent Route="ITPRIS_MainPage" ContentTemplate="{DataTemplate local:ITPRIS_MainPage}"/>
     </FlyoutItem>
    
     

@@ -5,28 +5,28 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using SpecialistCatalog.Services;
 
 namespace SpecialistCatalog.ViewModels
 {
-    public class ItemsViewModel : BaseViewModel
+    public class ITPRISMaterialsViewModel : BaseViewModel
     {
         private Item _selectedItem;
-
+        OpenInBrowser inBrowser;
         public ObservableCollection<Item> Items { get; }
         public Command LoadItemsCommand { get; }
         public Command AddItemCommand { get; }
         public Command<Item> ItemTapped { get; }
 
-        public ItemsViewModel()
+        public ITPRISMaterialsViewModel()
         {
-            Title = "Управление проектами"; //раньше был Browse
+            Title = "Лекции ИТПРИС";
             Items = new ObservableCollection<Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
-
             ItemTapped = new Command<Item>(OnItemSelected);
-
-            AddItemCommand = new Command(OnAddItem);
+            inBrowser = new OpenInBrowser();
         }
+
 
         async Task ExecuteLoadItemsCommand()
         {
@@ -36,9 +36,9 @@ namespace SpecialistCatalog.ViewModels
             {
                 Items.Clear();
                 var items = await DataStore.GetItemsAsync(true);
-                foreach (var item in items) ///ВОТ ПРИКРЕПЛЕНИЕ СПИСКА ИТЕМОВ! Тут надо внедрять цикл for
+                foreach (var item in items)
                 {
-                    if(item.Is_UPLection)
+                    if (item.Is_ITPRISLection)
                         Items.Add(item);
                 }
             }
@@ -51,7 +51,6 @@ namespace SpecialistCatalog.ViewModels
                 IsBusy = false;
             }
         }
-
         public void OnAppearing()
         {
             IsBusy = true;
@@ -68,18 +67,11 @@ namespace SpecialistCatalog.ViewModels
             }
         }
 
-        private async void OnAddItem(object obj)
-        {
-            await Shell.Current.GoToAsync(nameof(NewItemPage));
-        }
-
-        async void OnItemSelected(Item item)
+        void OnItemSelected(Item item)
         {
             if (item == null)
                 return;
-
-            // This will push the ItemDetailPage onto the navigation stack
-            await Shell.Current.GoToAsync($"{nameof(ItemDetailPage)}?{nameof(ItemDetailViewModel.ItemId)}={item.Id}");
+            inBrowser.OpenBrowser(item.Link.ToString());
         }
     }
 }
