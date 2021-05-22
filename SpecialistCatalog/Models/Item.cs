@@ -12,6 +12,7 @@ namespace SpecialistCatalog.Models
         public bool Is_AISnaGT { get; set; }
         public bool Is_ITPRISLection { get; set; }
         public bool Is_ITPRISLabs { get; set; }
-        public bool Is_SII { get; set; }
+        public bool Is_SIILection { get; set; }
+        public bool Is_SIILabs { get; set; }
     }
 }
