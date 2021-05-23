@@ -7,7 +7,7 @@
              xmlns:model="clr-namespace:SpecialistCatalog.Models">
     <ContentPage.Content>
         <StackLayout>
-            <RefreshView x:DataType="local:SIILabsViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+            <RefreshView x:DataType="local:SIIMaterialsViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
                 <CollectionView
                 ItemsSource="{Binding Items}"
                 SelectionMode="None">
@@ -25,7 +25,7 @@
                                 <StackLayout.GestureRecognizers>
                                     <TapGestureRecognizer 
                                 NumberOfTapsRequired="1"
-                                Command="{Binding Source={RelativeSource AncestorType={x:Type local:SIILabsViewModel}}, Path=ItemTapped}"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type local:SIIMaterialsViewModel}}, Path=ItemTapped}"
                                 CommandParameter="{Binding .}">
                                     </TapGestureRecognizer>
                                 </StackLayout.GestureRecognizers>
