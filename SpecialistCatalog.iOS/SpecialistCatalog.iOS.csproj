@@ -145,4 +145,40 @@
       <Name>SpecialistCatalog</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AISnaGT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ITPRIS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SII.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AISnaGT%402.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ITPRIS%402.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SII%402.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AISnaGT%403.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ITPRIS%403.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SII%403.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\College%403.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\College%402.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\College.png" />
+  </ItemGroup>
 </Project>

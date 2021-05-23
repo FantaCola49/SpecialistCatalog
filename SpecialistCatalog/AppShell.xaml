@@ -72,15 +72,15 @@
     <FlyoutItem Title="Управление Проектами" Icon="icon_feed.png">
         <ShellContent Route="UPMainPage" ContentTemplate="{DataTemplate local:UPMainPage}"/>
     </FlyoutItem>
-    <FlyoutItem Title="АИСнаЖТ" Icon="">
+    <FlyoutItem Title="АИСнаЖТ" Icon="AISnaGT.png">
         <ShellContent Route="AISnaGT_MainPage" ContentTemplate="{DataTemplate local:AISnaGT_MainPage}"/>
     </FlyoutItem>
 
-    <FlyoutItem Title="СИИ" Icon="">
+    <FlyoutItem Title="СИИ" Icon="SII.png">
         <ShellContent Route="SII_MainPage" ContentTemplate="{DataTemplate local:SII_MainPage}"/>
     </FlyoutItem>
 
-    <FlyoutItem Title="ИТПРИС" Icon="">
+    <FlyoutItem Title="ИТПРИС" Icon="ITPRIS.png">
         <ShellContent Route="ITPRIS_MainPage" ContentTemplate="{DataTemplate local:ITPRIS_MainPage}"/>
     </FlyoutItem>
    
@@ -98,5 +98,4 @@
     <TabBar>
         <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
     </TabBar>
-
 </Shell>
