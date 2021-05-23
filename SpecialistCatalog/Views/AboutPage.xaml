@@ -23,28 +23,19 @@
         <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
                 <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
-                    <Image Source="xamarin_logo.png" VerticalOptions="Center" HeightRequest="64" />
+                    <Image Source="College.png" VerticalOptions="Center" HeightRequest="64" />
                 </ContentView>
             </StackLayout>
         </StackLayout>
         <ScrollView Grid.Row="1">
             <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
-                <Label Text="Start developing now" FontSize="Title"/>
-                <Label Text="Неретин Крутой! Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="0,0,0,0"/>
-                <Label FontSize="16" Padding="0,24,0,0">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <FormattedString.Spans>
-                                <Span Text="Learn more at "/>
-                                <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                            </FormattedString.Spans>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-                <Button Margin="0,10,0,0" Text="Learn more"
-                        Command="{Binding OpenWebCommand}"
-                        BackgroundColor="{StaticResource Primary}"
-                        TextColor="White" />
+                <Label Text="Электронный справочник специалиста ифнормационных систем" HorizontalOptions="CenterAndExpand" FontSize="Title"/>
+                <Label Text="От обучающегося нередко требуется инициативность и находчивость для проведения дополнительных взысканий.
+                       Для таких целей чаще всего используется всемирная сеть Интернет, однако огромный объём находящейся в нём информации 
+                       не всегда позволяет найти полезную исчерпывающий ответ в короткие сроки." FontSize="16"/>
+                <Label FontSize="16" Text="Для облегчения процесса поиска удобоваримой информации было принято решение разработать специализированный справочник, который будет полезен при изучении материала, преподаваемого в образовательном учреждении." />
+                <Label FontSize="16" Text="Представленная программа была создана в целях помощи студентам МКТ. " />
+                <Label FontSize="16" Text="Её основным приоритетом является упрощение процесса" />
             </StackLayout>
         </ScrollView>
     </Grid>
