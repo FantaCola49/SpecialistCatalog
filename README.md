@@ -10,7 +10,7 @@
 
 ![](SpecialistCatalog/Demo/3_SII.jpg)
 
-![](SpecialistCatalog/Demo/4_XOR.jpg)
+![](https://github.com/FantaCola49/SpecialistCatalog/blob/master/Demo/4_XOR.jpg)
 
 
 Для корректного использования рекомендуется также установить Google Drive на телефон.
